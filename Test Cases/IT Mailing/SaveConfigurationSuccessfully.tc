@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SaveConfigurationSuccessfully</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>89cfa68c-6854-4b87-b781-514702b8e67e</testCaseGuid>
+   <variable>
+      <defaultValue>'smtp.gmail.com'</defaultValue>
+      <description></description>
+      <id>cd0ecc83-275e-424d-b01b-58e39541ff04</id>
+      <masked>false</masked>
+      <name>smtp</name>
+   </variable>
+   <variable>
+      <defaultValue>'587'</defaultValue>
+      <description></description>
+      <id>0ddb2162-a68e-4908-8ab8-1ab2d819dd02</id>
+      <masked>false</masked>
+      <name>port</name>
+   </variable>
+   <variable>
+      <defaultValue>'Son Nguyen '</defaultValue>
+      <description></description>
+      <id>76a4c482-4074-4c48-9cbe-c4c89abad2af</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'tien.nguyen@kms-technology.com'</defaultValue>
+      <description></description>
+      <id>4ea3c821-e0db-462c-998c-353724c9ea4b</id>
+      <masked>false</masked>
+      <name>address</name>
+   </variable>
+   <variable>
+      <defaultValue>'tien.nguyen@kms-technology.com'</defaultValue>
+      <description></description>
+      <id>4814a101-733e-4d95-b89e-6a3c28fead32</id>
+      <masked>false</masked>
+      <name>account</name>
+   </variable>
+   <variable>
+      <defaultValue>'vH9Tk2TehMt1riDPvmubEA=='</defaultValue>
+      <description></description>
+      <id>a37fa488-473d-40a9-bfe3-635daa239218</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>
