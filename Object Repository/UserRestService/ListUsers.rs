@@ -36,6 +36,7 @@ WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
 
-WS.verifyElementPropertyValue(response, 'data[1].first_name', 'Lindsay')</verificationScript>
+WS.verifyElementPropertyValue(response, 'data[1].first_name', 'Lindsay')
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

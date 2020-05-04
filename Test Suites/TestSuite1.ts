@@ -20,18 +20,18 @@
       <guid>5ae4d68d-9101-43a8-aa10-a90cde899043</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/GetBankDetails</testCaseId>
+      <testCaseId>Test Cases/Example/GetBankDetails</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>22041f72-9b27-4403-9ecc-a56dbcc63010</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/ListUsersTest</testCaseId>
+      <testCaseId>Test Cases/Example/ListUsersTest</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9f243ebd-e1f3-4f6e-88a9-4bae8c9cb2f2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TestHTTPMethods</testCaseId>
+      <testCaseId>Test Cases/Example/TestHTTPMethods</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
