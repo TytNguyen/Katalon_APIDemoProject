@@ -18,25 +18,20 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://tien.nguyen:Kms%401998@192.168.74.132:8081/')
+WebUI.navigateToUrl('http://tien.nguyen:Kms%401998@192.168.74.132:8081/EmailConfig')
 
-WebUI.uploadFile(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/input_Import_file'), 'D:\\project\\Book2.xlsx')
+WebUI.click(findTestObject('Page_Email Config - KMSITMailingPresentation/a_Template'))
 
-WebUI.click(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/input_Book2xlsx_import'))
+WebUI.doubleClick(findTestObject('Object Repository/Page_Email Config - KMSITMailingPresentation/input__subject'))
 
-expectedOptions = CustomKeywords.'example.GetDropdownBoxData.getResourceBeforeSend'(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/select_All'))
+WebUI.setText(findTestObject('Object Repository/Page_Email Config - KMSITMailingPresentation/input__subject'), 'abc')
 
-WebUI.selectOptionByValue(findTestObject('Page_Index - KMSITMailingPresentation/select_All'), 'Review 3G / Internet Allowance', false)
+WebUI.click(findTestObject('Object Repository/Page_Email Config - KMSITMailingPresentation/p_testing 123'))
 
-WebUI.click(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/span_Send mails'))
+WebUI.setText(findTestObject('Object Repository/Page_Email Config - KMSITMailingPresentation/body_TemplateADeadlineDateabcb'), 
+    '<p style="">[TemplateA]</p><p style="">[DeadlineDate]</p><p style="">abcb</p><div id="katalon" style="top: 0px;"><div id="katalon-rec_elementInfoDiv" style="display: none;"></div></div>')
 
-result = WebUI.getText(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/span_Emails failed to send'))
+WebUI.click(findTestObject('Page_Email Config - KMSITMailingPresentation/input_View Content_saveTemplate'))
 
-WebUI.verifyMatch(result, 'Emails sent', true)
-
-actualOptions = CustomKeywords.'example.GetDropdownBoxData.getResourceAfterSend'(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/select_All'))
-
-CustomKeywords.'example.GetDropdownBoxData.Compare'(actualOptions, expectedOptions)
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Page_Email Config - KMSITMailingPresentation/span_Save successfully'))
 
