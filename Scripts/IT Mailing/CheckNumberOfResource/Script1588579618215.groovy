@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://tien.nguyen:Kms%401998@192.168.74.132:8081/')
+CustomKeywords.'example.Login.LoginAuthen'('tien.nguyen', 'Kms@1998', 'home')
 
 WebUI.uploadFile(findTestObject('Page_Index - KMSITMailingPresentation/input_Import_file'), 'D:\\project\\Book2.xlsx')
 
@@ -30,4 +30,6 @@ SelectItems = WebUI.getNumberOfTotalOption(findTestObject('Page_Index - KMSITMai
 println('No of Resources are ' + SelectItems)
 
 WebUI.verifyEqual(SelectItems, 8)
+
+WebUI.closeBrowser()
 

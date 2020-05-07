@@ -20,38 +20,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.support.ui.Select
-import org.testng.Assert
-
-import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
-import com.kms.katalon.core.webui.driver.DriverFactory
-
-
-
-
-public class GetDropdownBoxData {
+public class Login {
 	@Keyword
-	public static List<String> getResource (TestObject objectto) {
-		WebElement element = WebUiCommonHelper.findWebElement(objectto, 20);
-		List<String> expectedOptions = new ArrayList<>()
-		Select ele = new Select(element)
-		for (WebElement option : ele.getOptions()) {
-			System.out.println("Dropdown options are: " + option.getText())
-			expectedOptions.add(option.getText())
-		}
-		return expectedOptions
-	}
-
-	@Keyword
-	public static void Compare (List<String> expectedOptions, List<String> actualOptions) {
-		for (int i = 0; i < expectedOptions.size(); i++) {
-			if (!expectedOptions[i].equals(actualOptions[i])) {
-				System.out.println("Resource " + expectedOptions[i] + " had sent mail")
-			}
-		}
+	public static void LoginAuthen (String name, String pass, String url) {
+		WebUI.navigateToUrl('http://' + name + ':' + pass + '@192.168.74.132:8081/' + url)
 	}
 }
+

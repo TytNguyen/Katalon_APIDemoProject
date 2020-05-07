@@ -17,7 +17,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://tien.nguyen:Kms@1998@192.168.74.132:8081/EmailConfig')
+CustomKeywords.'example.Login.LoginAuthen'('tien.nguyen', 'Kms@1998', 'emailconfig')
+
 
 WebUI.click(findTestObject('Page_Email Config - KMSITMailingPresentation/button_Reset'))
 

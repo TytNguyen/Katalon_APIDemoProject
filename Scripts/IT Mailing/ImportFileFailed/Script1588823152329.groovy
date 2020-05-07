@@ -16,27 +16,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
+
 WebUI.openBrowser('')
 
 CustomKeywords.'example.Login.LoginAuthen'('tien.nguyen', 'Kms@1998', 'home')
 
-WebUI.uploadFile(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/input_Import_file'), 'D:\\project\\Book2.xlsx')
+WebUI.uploadFile(findTestObject('Page_Index - KMSITMailingPresentation/input_Import_file'), 'D:\\project\\final.xlsx')
 
-WebUI.click(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/input_Book2xlsx_import'))
+WebUI.click(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/input_IT Mailing Tool_ Data Import (final)x_4a1027'))
 
-expectedOptions = CustomKeywords.'example.GetDropdownBoxData.getResource'(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/select_All'))
-
-WebUI.selectOptionByValue(findTestObject('Page_Index - KMSITMailingPresentation/select_All'), 'Review 3G / Internet Allowance', false)
-
-WebUI.click(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/span_Send mails'))
-
-result = WebUI.getText(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/span_Emails failed to send'))
-
-WebUI.verifyMatch(result, 'Emails sent!', true)
-
-actualOptions = CustomKeywords.'example.GetDropdownBoxData.getResource'(findTestObject('Object Repository/Page_Index - KMSITMailingPresentation/select_All'))
-
-CustomKeywords.'example.GetDropdownBoxData.Compare'(expectedOptions, actualOptions)
+CustomKeywords.'example.GetDataFromTable.getError'('tableerror')
 
 WebUI.closeBrowser()
 

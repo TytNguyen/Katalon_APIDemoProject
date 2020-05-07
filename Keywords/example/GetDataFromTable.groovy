@@ -20,37 +20,31 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.support.ui.Select
-import org.testng.Assert
+import org.openqa.selenium.By as By
 
-import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
-import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver as WebDriver
 
+import org.openqa.selenium.WebElement as WebElement
 
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-
-public class GetDropdownBoxData {
+public class GetDataFromTable {
 	@Keyword
-	public static List<String> getResource (TestObject objectto) {
-		WebElement element = WebUiCommonHelper.findWebElement(objectto, 20);
-		List<String> expectedOptions = new ArrayList<>()
-		Select ele = new Select(element)
-		for (WebElement option : ele.getOptions()) {
-			System.out.println("Dropdown options are: " + option.getText())
-			expectedOptions.add(option.getText())
-		}
-		return expectedOptions
-	}
-
-	@Keyword
-	public static void Compare (List<String> expectedOptions, List<String> actualOptions) {
-		for (int i = 0; i < expectedOptions.size(); i++) {
-			if (!expectedOptions[i].equals(actualOptions[i])) {
-				System.out.println("Resource " + expectedOptions[i] + " had sent mail")
+	public static List<String> getError (String id) {
+		WebDriver driver = DriverFactory.getWebDriver()
+		WebElement Table = driver.findElement(By.id(id))
+		List < WebElement > rows_table = Table.findElements(By.tagName('tr'))
+		int rows_count = rows_table.size()
+		for (int row = 1; row < rows_count; row++) {
+			List < WebElement > Columns_row = rows_table.get(row).findElements(By.tagName('td'))
+			int columns_count = Columns_row.size()
+			println('Row: ' + row)
+			for (int column = 0; column < columns_count; column++) {
+				String celltext = Columns_row.get(column).getText()
+				celltext = celltext.trim();
+				if (celltext.length() > 4)
+					println('Error Details: ' + celltext)
+				else println('Line: ' + celltext)
 			}
 		}
 	}
