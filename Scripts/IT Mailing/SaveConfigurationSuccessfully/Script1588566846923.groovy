@@ -19,7 +19,6 @@ WebUI.openBrowser('')
 
 CustomKeywords.'example.Login.LoginAuthen'('tien.nguyen', 'Kms@1998', 'emailconfig')
 
-
 WebUI.click(findTestObject('Page_Email Config - KMSITMailingPresentation/button_Reset'))
 
 WebUI.setText(findTestObject('Page_Email Config - KMSITMailingPresentation/input__smtpserver'), smtp)

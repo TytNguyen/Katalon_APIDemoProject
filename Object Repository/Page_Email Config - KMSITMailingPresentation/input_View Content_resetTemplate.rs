@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>iframe_Paragraph_content_ifr</name>
+   <name>input_View Content_resetTemplate</name>
    <tag></tag>
-   <elementGuidId>1e40d509-6258-44eb-b514-ccfea22c2d32</elementGuidId>
+   <elementGuidId>37d562f9-41e7-47e3-8257-6b4719ebf26b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//iframe[@id='content_ifr']</value>
+         <value>//input[@id='resetTemplate']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,69 +17,69 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>iframe</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>type</name>
       <type>Main</type>
-      <value>content_ifr</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>frameborder</name>
-      <type>Main</type>
-      <value>0</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>allowtransparency</name>
-      <type>Main</type>
-      <value>true</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>title</name>
-      <type>Main</type>
-      <value>Rich Text Area. Press ALT-0 for help.</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>tox-edit-area__iframe</value>
+      <value>btn btn-secondary w-100</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>resetTemplate</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>onclick</name>
+      <type>Main</type>
+      <value>resetFormTemplate()</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Reset</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;content_ifr&quot;)</value>
+      <value>id(&quot;resetTemplate&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//iframe[@id='content_ifr']</value>
+      <value>//input[@id='resetTemplate']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='nav-profile']/div/div[4]/div[2]/div/div/div[2]/div/iframe</value>
+      <value>//div[@id='nav-profile']/div/div[5]/div/div[3]/div/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//iframe</value>
+      <value>//div[5]/div/div[3]/div/input</value>
    </webElementXpaths>
 </WebElementEntity>

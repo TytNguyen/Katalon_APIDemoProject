@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_SMTP Server                            _d8bf06</name>
+   <name>span_</name>
    <tag></tag>
-   <elementGuidId>db633fb5-3886-4c4b-a4bb-bedf501ad641</elementGuidId>
+   <elementGuidId>bc1ff7db-0944-4df5-8ec9-f101f38f5f5f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='nav-home']/div</value>
+         <value>//div[@id='markModal']/div/div/div/button/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,107 +17,76 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
+      <value>span</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>aria-hidden</name>
       <type>Main</type>
-      <value>container</value>
+      <value>true</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-        
-            SMTP Server *
-            
-                
-            
-
-            Port *
-            
-                
-            
-        
-
-        
-            Display Name*
-            
-                
-            
-        
-
-        
-            From Address *
-            
-                
-            
-        
-
-        
-            Account *
-            
-                
-            
-        
-
-        
-            Password *
-            
-                
-            
-
-        
-
-        
-            
-                
-                    
-                    Save
-                
-                Reset
-            
-        
-
-    </value>
+      <value>×</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;nav-home&quot;)/div[@class=&quot;container&quot;]</value>
+      <value>id(&quot;markModal&quot;)/div[@class=&quot;modal-dialog .modal-xl modal-lg modal-sm modal-dialog-scrollable&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-header&quot;]/button[@class=&quot;close&quot;]/span[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='nav-home']/div</value>
+      <value>//div[@id='markModal']/div/div/div/button/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Template'])[1]/following::div[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='View Content'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Configuration'])[1]/following::div[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Powered by Tiny'])[1]/following::span[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No.'])[1]/preceding::span[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Email address'])[1]/preceding::span[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='×']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//section/div/div/div/div/div</value>
+      <value>//div[3]/div/div/div/button/span</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>body_TemplateADeadlineDateabcb</name>
+   <name>textarea_Source Code_tox-textarea</name>
    <tag></tag>
-   <elementGuidId>91eab47b-b870-43c5-b27e-9b1a1dce8c6a</elementGuidId>
+   <elementGuidId>33a5db78-fae5-42ef-adfa-69d4168ebf8d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//body[@id='tinymce']</value>
+         <value>//textarea[@type='text']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,69 +17,62 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>body</value>
+      <value>textarea</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>type</name>
       <type>Main</type>
-      <value>tinymce</value>
+      <value>text</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>tabindex</name>
       <type>Main</type>
-      <value>mce-content-body </value>
+      <value>-1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-id</name>
-      <type>Main</type>
-      <value>content</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>contenteditable</name>
+      <name>data-alloy-tabstop</name>
       <type>Main</type>
       <value>true</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>spellcheck</name>
+      <name>class</name>
       <type>Main</type>
-      <value>false</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>[TemplateA][DeadlineDate]abcb</value>
+      <value>tox-textarea</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;tinymce&quot;)</value>
+      <value>id(&quot;dialog-describe_9970238153351588840686719&quot;)/div[@class=&quot;tox-dialog__body&quot;]/div[@class=&quot;tox-dialog__body-content&quot;]/div[@class=&quot;tox-form&quot;]/div[@class=&quot;tox-form__group tox-form__group--stretched&quot;]/textarea[@class=&quot;tox-textarea&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//body[@id='tinymce']</value>
+      <value>//textarea[@type='text']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='dialog-describe_9970238153351588840686719']/div/div/div/div/textarea</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//body</value>
+      <value>//div[2]/div/div/div/div/textarea</value>
    </webElementXpaths>
 </WebElementEntity>
